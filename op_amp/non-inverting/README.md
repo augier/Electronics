@@ -16,13 +16,13 @@ As the gain increases, the bandwidth decreases.
 ## Instructions
 
 Run the circuit with:
- ```ngspice op_amp.cir```
+```ngspice op_amp.cir```
 
-For the sake of my interests, testing over frequency range 10Hz - 20KHz (just wider than normal human hearing).
+For the sake modelling, test over input frequency range 10Hz - 100KHz (just wider than normal human hearing).
 
 Apply a 1v ac supply of increasing frequency to `Vin`:
 ```
-ac dec 10 10Hz 20KHz
+ac dec 10 10Hz 100KHz
 ```
 * note: the second argument (in this case `10`) is points per decade *
 
@@ -39,18 +39,18 @@ Arbitrary resister choices to start
 r1 = 1.2KOhm
 r2 = 4.7KOhm
 Expected Gain = 4.917
-Bandwidth = 2KHz
+Gain at 20Khz = 4.877
 ```
-Band width is an order of magnitude too small.
+Bandwidth is acceptable on the range specified.
 [Plot 1](plots/plot_1.png)
 
 2.
-Decreasing r2
+Increasing gain by increasing r2
 ```
 r1 = 1.2KOhm
-r2 = 2KOhm
-Expected Gain = 2.667
-Bandwidth = 2KHz
+r2 = 9.1KOhm
+Expected Gain = 8.583
+Gain at 20KHz = 8.380
 ```
-Expecting the bandwidth to have increased but it has stayed the same.
+Gain increased without affecting bandwidth of range of interest.
 [Plot 2](plots/plot_2.png)
