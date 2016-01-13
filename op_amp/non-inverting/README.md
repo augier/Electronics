@@ -75,3 +75,4 @@ wouldn't be suitable.
 
 As expected the increasing the value of r2 increases the gain, however the
 bandwidth of the circuit decreases.
+[Plot 3](plots/plot_3.png)
