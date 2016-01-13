@@ -3,7 +3,7 @@
 V1 V+ 0 DC 12
 V2 0 V- DC 12
 r1  	0  1  1.2k
-r2  	1  2  4.7k
+r2  	1  2  2k
 Vin 3 0 AC 1V
 xamp1   3 1  V+    V-  2 UA741
 .include UA741.cir

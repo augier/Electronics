@@ -41,5 +41,16 @@ r2 = 4.7KOhm
 Expected Gain = 4.917
 Bandwidth = 2KHz
 ```
+Band width is an order of magnitude too small.
+[Plot 1](plots/plot_1.png)
 
-[plot 1](plot_1.png)
+2.
+Decreasing r2
+```
+r1 = 1.2KOhm
+r2 = 2KOhm
+Expected Gain = 2.667
+Bandwidth = 2KHz
+```
+Expecting the bandwidth to have increased but it has stayed the same.
+[Plot 2](plots/plot_2.png)
