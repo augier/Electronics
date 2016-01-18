@@ -1,7 +1,7 @@
 *** non-inverting amplifier ***
 *global gnd
-V1 V+ 0 DC 12
-V2 0 V- DC 12
+Vdd V+ 0 DC 12
+Vss 0 V- DC 12
 r1  0  1  1.2k
 r2  1  2  43k
 Vin 3 0 AC 1V
